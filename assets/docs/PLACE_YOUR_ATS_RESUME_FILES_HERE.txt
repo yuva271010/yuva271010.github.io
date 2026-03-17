@@ -1,0 +1,3 @@
+Upload your ATS resume files into this folder and keep the filenames referenced in downloads.html:
+ - Yuvaraj_Ravindra_CV_ATS.pdf
+ - Yuvaraj_Ravindra_CV_ATS.docx
