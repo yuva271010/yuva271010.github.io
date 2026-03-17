@@ -1,147 +1,153 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Case Studies | Yuvaraj Ravindra</title>
-  <meta name="description" content="Selected case studies: Microsoft Fabric + Power BI platforms, Salesforce/ERP harmonization, forecasting enablement." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Studies  Yuvaraj Ravindra</title>
+  <meta name="description" content="Case studies: Microsoft Fabric + Power BI platform, Salesforce/ERP harmonisation, ML forecasting enablement.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="index.html">
-        <div class="logo">YR</div>
-        <span>Yuvaraj Ravindra</span>
-      </a>
+<header class="topbar">
+  <div class="container">
+    <div class="nav">
+      <a href="index.html" class="brand"><div class="logo">YR</div><span>Yuvaraj Ravindra</span></a>
       <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="case-studies.html">Case Studies</a>
+        <a href="index.html">Resume</a>
+        <a href="case-studies.html" class="active">Case Studies</a>
         <a href="about.html">About</a>
-        <a class="nav-cta" href="downloads.html">Download CV</a>
+        <a href="downloads.html" class="nav-cta">Download CV</a>
       </nav>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="section" style="padding-bottom:0">
-    <div class="container page-lead">
-      <span class="kicker">Proof of impact</span>
-      <h1>Case Studies</h1>
-      <p class="section-sub">Short, scannable stories &mdash; Problem &rarr; Approach &rarr; Impact &rarr; Tech.</p>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">Proof of Impact</span>
+    <h1>Case Studies</h1>
+    <h2>Problem  Approach  Impact  Tech</h2>
+  </div>
+</section>
 
-  <!-- CASE 1 -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="card case-card">
-        <div class="cs-header">
-          <span class="cs-num">1</span>
-          <h2>Enterprise Analytics Platform (Microsoft Fabric + Power BI)</h2>
+<!-- STUDIES -->
+<section class="section">
+  <div class="container">
+
+    <div class="cs-card">
+      <div class="cs-header">
+        <div class="cs-num">1</div>
+        <h2>Enterprise Analytics Platform (Microsoft Fabric + Power BI)</h2>
+      </div>
+      <div class="cs-grid">
+        <div class="cs-col problem">
+          <h4>Problem</h4>
+          <p>Fragmented reporting, inconsistent KPIs, and slow decision cycles across 10 business departments  Finance, Sales, Operations, Supply Chain, and more.</p>
         </div>
-        <div class="cs-block">
-          <div class="cs-row">
-            <span class="cs-label problem">Problem</span>
-            <p class="cs-text">Fragmented reporting, inconsistent KPIs, and slow decision cycles across 10 business departments.</p>
-          </div>
-          <div class="cs-row">
-            <span class="cs-label approach">Approach</span>
-            <p class="cs-text">Designed an end-to-end platform: data marts + semantic layer, governance workflows, workspace standards, and RLS patterns aligned to org structure.</p>
-          </div>
-          <div class="cs-row">
-            <span class="cs-label impact">Impact</span>
-            <p class="cs-text">Enabled <strong>400+ users</strong> across 10 departments; reduced decision latency from <strong>weeks to hours</strong>.</p>
-          </div>
+        <div class="cs-col approach">
+          <h4>Approach</h4>
+          <p>Designed an end-to-end platform: OneLake Lakehouse with medallion architecture (Bronze/Silver/Gold), governed semantic models, workspace governance, RBAC/RLS aligned to org structure, and CI/CD pipelines via Azure DevOps.</p>
         </div>
-        <div class="cs-tech">
-          <span class="badge blue">Microsoft Fabric</span>
-          <span class="badge blue">Power BI</span>
-          <span class="badge blue">DAX &bull; RLS</span>
-          <span class="badge green">OneLake &bull; Lakehouse</span>
-          <span class="badge green">Dataflows Gen2</span>
-          <span class="badge green">PySpark Notebooks</span>
-          <span class="badge purple">Kimball / Star Schema</span>
-          <span class="badge purple">Azure DevOps CI/CD</span>
+        <div class="cs-col impact">
+          <h4>Impact</h4>
+          <p>400+ platform users across 10 departments; reporting latency reduced from weeks to hours; self-service analytics adoption enabled enterprise-wide.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CASE 2 -->
-  <section class="section">
-    <div class="container">
-      <div class="card case-card">
-        <div class="cs-header">
-          <span class="cs-num">2</span>
-          <h2>Salesforce + ERP Harmonization (Commercial Performance)</h2>
-        </div>
-        <div class="cs-block">
-          <div class="cs-row">
-            <span class="cs-label problem">Problem</span>
-            <p class="cs-text">Misaligned CRM/ERP data causing errors in incentive calculations, revenue reconciliation, and forecasting confidence.</p>
-          </div>
-          <div class="cs-row">
-            <span class="cs-label approach">Approach</span>
-            <p class="cs-text">Migrated and harmonized CRM data, aligned master data with ERP, and standardized KPI definitions shared by Sales and Finance.</p>
-          </div>
-          <div class="cs-row">
-            <span class="cs-label impact">Impact</span>
-            <p class="cs-text">Migrated <strong>3M+ Salesforce records</strong>; improved SPIFF / incentive tracking and revenue reconciliation accuracy across regions.</p>
-          </div>
-        </div>
-        <div class="cs-tech">
-          <span class="badge blue">Salesforce Sales Cloud</span>
-          <span class="badge blue">Power BI</span>
-          <span class="badge green">MuleSoft / Scribe</span>
-          <span class="badge green">SQL</span>
-          <span class="badge purple">Master Data Management</span>
-        </div>
+      <div class="cs-tech">
+        <span class="badge blue">Microsoft Fabric</span>
+        <span class="badge blue">Power BI</span>
+        <span class="badge blue">DAX  RLS</span>
+        <span class="badge green">OneLake  Lakehouse</span>
+        <span class="badge green">Dataflows Gen2</span>
+        <span class="badge green">PySpark Notebooks</span>
+        <span class="badge purple">Kimball / Star Schema</span>
+        <span class="badge purple">Azure DevOps CI/CD</span>
       </div>
     </div>
-  </section>
 
-  <!-- CASE 3 -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="card case-card">
-        <div class="cs-header">
-          <span class="cs-num">3</span>
-          <h2>Forecasting Enablement (Analytics + ML)</h2>
+    <div class="cs-card">
+      <div class="cs-header">
+        <div class="cs-num">2</div>
+        <h2>Salesforce + ERP Harmonisation (Commercial Performance)</h2>
+      </div>
+      <div class="cs-grid">
+        <div class="cs-col problem">
+          <h4>Problem</h4>
+          <p>Misaligned CRM and ERP data causing errors in incentive calculations, revenue reconciliation, and forecasting confidence across Sales and Finance.</p>
         </div>
-        <div class="cs-block">
-          <div class="cs-row">
-            <span class="cs-label problem">Problem</span>
-            <p class="cs-text">Limited forward-looking visibility for bookings and inventory planning, relying on manual spreadsheet models.</p>
-          </div>
-          <div class="cs-row">
-            <span class="cs-label approach">Approach</span>
-            <p class="cs-text">Python-based EDA and feature refinement; applied ML techniques (decision trees / regression) to generate forecasting insights surfaced via Power BI.</p>
-          </div>
-          <div class="cs-row">
-            <span class="cs-label impact">Impact</span>
-            <p class="cs-text">Delivered interactive forecast insights for commercial planning and operational decisioning, replacing static spreadsheet models.</p>
-          </div>
+        <div class="cs-col approach">
+          <h4>Approach</h4>
+          <p>Migrated and harmonised CRM data (3M+ records), aligned master data with ERP for SPIFF tracking, standardised KPI definitions shared across Sales and Finance using MuleSoft and Scribe for integration.</p>
         </div>
-        <div class="cs-tech">
-          <span class="badge blue">Power BI</span>
-          <span class="badge green">Python</span>
-          <span class="badge green">Jupyter Notebooks</span>
-          <span class="badge purple">Decision Trees</span>
-          <span class="badge purple">Regression Models</span>
+        <div class="cs-col impact">
+          <h4>Impact</h4>
+          <p>3M+ Salesforce records migrated at 98% accuracy; improved SPIFF/incentive tracking and revenue reconciliation; E-Commerce product store implemented end-to-end.</p>
         </div>
       </div>
+      <div class="cs-tech">
+        <span class="badge blue">Salesforce Sales Cloud</span>
+        <span class="badge blue">Power BI</span>
+        <span class="badge green">MuleSoft  Scribe</span>
+        <span class="badge green">SQL  Data Migration</span>
+        <span class="badge purple">Master Data Management</span>
+        <span class="badge purple">Microsoft AX / D365 F&amp;O</span>
+      </div>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>Want the full CV? <a href="downloads.html">Download here</a> &bull; <a href="mailto:yuvaraj85@gmail.com">yuvaraj85@gmail.com</a></p>
+    <div class="cs-card">
+      <div class="cs-header">
+        <div class="cs-num">3</div>
+        <h2>Forecasting Enablement (Analytics + ML)</h2>
+      </div>
+      <div class="cs-grid">
+        <div class="cs-col problem">
+          <h4>Problem</h4>
+          <p>Minimal forward-looking visibility for bookings and inventory planning  teams relied on static manual spreadsheet models with long turnaround cycles.</p>
+        </div>
+        <div class="cs-col approach">
+          <h4>Approach</h4>
+          <p>Python-based EDA and feature engineering; applied ML techniques (decision trees, linear regression) to generate forecasting insights surfaced directly in Power BI dashboards for commercial planning teams.</p>
+        </div>
+        <div class="cs-col impact">
+          <h4>Impact</h4>
+          <p>Interactive forecast dashboards replaced spreadsheet models; commercial planning and operational decisioning improved; Copilot AI-augmented workflows enabled for ongoing iteration.</p>
+        </div>
+      </div>
+      <div class="cs-tech">
+        <span class="badge blue">Power BI</span>
+        <span class="badge green">Python  PySpark</span>
+        <span class="badge green">Jupyter Notebooks</span>
+        <span class="badge purple">Decision Trees</span>
+        <span class="badge purple">Linear Regression</span>
+        <span class="badge purple">GitHub Copilot</span>
+      </div>
     </div>
-  </footer>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Next Steps</span>
+      <h2 class="section-title">Explore Further</h2>
+    </div>
+    <div class="contact-row">
+      <a href="index.html" class="contact-chip"> Full Resume</a>
+      <a href="downloads.html" class="contact-chip"> Download CV</a>
+      <a href="mailto:yuvaraj.ravindra271010@gmail.com" class="contact-chip"> Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p> 2025 Yuvaraj Ravindra &nbsp;&nbsp; <a href="https://github.com/yuva271010/yuva271010.github.io" target="_blank">GitHub</a></p>
+  </div>
+</footer>
 
 </body>
 </html>
