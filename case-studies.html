@@ -20,46 +20,102 @@
     </div>
   </header>
 
-  <main class="container" style="padding-top:18px">
-    <section class="card">
+  <main class="container">
+    <section class="card page-lead">
       <div class="kicker">Proof of impact</div>
-      <h1 style="font-size:32px;margin:6px 0 8px">Case Studies</h1>
-      <p class="subtitle">Short, scannable stories (Problem → Approach → Impact → Tech).</p>
+      <h1>Case Studies</h1>
+      <p class="subtitle">Short, scannable stories — Problem &rarr; Approach &rarr; Impact &rarr; Tech.</p>
     </section>
 
-    <section class="card">
-      <h2>1) Enterprise Analytics Platform (Microsoft Fabric + Power BI)</h2>
-      <ul class="bullets">
-        <li><b>Problem:</b> Fragmented reporting, inconsistent KPIs, and slow decision cycles.</li>
-        <li><b>Approach:</b> Designed an end-to-end platform: data marts + semantic layer, governance workflows, workspace standards, and RLS patterns.</li>
-        <li><b>Impact:</b> Enabled 400+ users across 10 departments; reduced decision latency from weeks to hours.</li>
-        <li><b>Tech:</b> Microsoft Fabric (OneLake, Lakehouse/Warehouse, Dataflows Gen2, Pipelines, Notebooks/PySpark) + Power BI (semantic models, DAX, RLS).</li>
-      </ul>
+    <section class="card case-card">
+      <div class="cs-header">
+        <span class="cs-num">1</span>
+        <h2>Enterprise Analytics Platform (Microsoft Fabric + Power BI)</h2>
+      </div>
+      <div class="cs-block">
+        <div class="cs-row">
+          <span class="cs-label problem">Problem</span>
+          <p class="cs-text">Fragmented reporting, inconsistent KPIs, and slow decision cycles across 10 business departments.</p>
+        </div>
+        <div class="cs-row">
+          <span class="cs-label approach">Approach</span>
+          <p class="cs-text">Designed an end-to-end platform: data marts + semantic layer, governance workflows, workspace standards, and RLS patterns aligned to org structure.</p>
+        </div>
+        <div class="cs-row">
+          <span class="cs-label impact">Impact</span>
+          <p class="cs-text">Enabled <strong>400+ users</strong> across 10 departments; reduced decision latency from <strong>weeks to hours</strong>.</p>
+        </div>
+      </div>
+      <div class="cs-tech">
+        <span class="badge blue">Microsoft Fabric</span>
+        <span class="badge blue">Power BI</span>
+        <span class="badge blue">DAX · RLS</span>
+        <span class="badge green">OneLake · Lakehouse</span>
+        <span class="badge green">Dataflows Gen2</span>
+        <span class="badge green">PySpark Notebooks</span>
+        <span class="badge purple">Kimball / Star Schema</span>
+        <span class="badge purple">Azure DevOps CI/CD</span>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>2) Salesforce + ERP Harmonization (Commercial Performance)</h2>
-      <ul class="bullets">
-        <li><b>Problem:</b> Misaligned CRM/ERP data affecting incentives, reconciliation, and forecasting confidence.</li>
-        <li><b>Approach:</b> Migrated and harmonized CRM data, aligned master data with ERP, and standardized KPI definitions used by Sales and Finance.</li>
-        <li><b>Impact:</b> Migrated 3M+ Salesforce records; improved incentive/SPIFF tracking and revenue reconciliation accuracy across regions.</li>
-        <li><b>Tech:</b> Salesforce Sales Cloud, MuleSoft/Scribe integration, SQL, Power BI.</li>
-      </ul>
+    <section class="card case-card">
+      <div class="cs-header">
+        <span class="cs-num">2</span>
+        <h2>Salesforce + ERP Harmonization (Commercial Performance)</h2>
+      </div>
+      <div class="cs-block">
+        <div class="cs-row">
+          <span class="cs-label problem">Problem</span>
+          <p class="cs-text">Misaligned CRM/ERP data causing errors in incentive calculations, revenue reconciliation, and forecasting confidence.</p>
+        </div>
+        <div class="cs-row">
+          <span class="cs-label approach">Approach</span>
+          <p class="cs-text">Migrated and harmonized CRM data, aligned master data with ERP, standardized KPI definitions shared by Sales and Finance teams.</p>
+        </div>
+        <div class="cs-row">
+          <span class="cs-label impact">Impact</span>
+          <p class="cs-text">Migrated <strong>3M+ Salesforce records</strong>; improved SPIFF / incentive tracking and revenue reconciliation accuracy across regions.</p>
+        </div>
+      </div>
+      <div class="cs-tech">
+        <span class="badge blue">Salesforce Sales Cloud</span>
+        <span class="badge blue">Power BI</span>
+        <span class="badge green">MuleSoft / Scribe</span>
+        <span class="badge green">SQL</span>
+        <span class="badge purple">Master Data Management</span>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>3) Forecasting Enablement (Analytics + ML)</h2>
-      <ul class="bullets">
-        <li><b>Problem:</b> Limited forward-looking visibility for bookings and inventory planning.</li>
-        <li><b>Approach:</b> Python-based EDA and feature refinement, then applied ML techniques to generate forecasting insights and expose them via Power BI.</li>
-        <li><b>Impact:</b> Improved forecast usability by delivering interactive insights for commercial planning and operational decisioning.</li>
-        <li><b>Tech:</b> Python, notebooks, decision trees / regression models, Power BI dashboards.</li>
-      </ul>
-      <p class="small">Tip: you can expand each case study later with diagrams, screenshots, and architecture flows.</p>
+    <section class="card case-card">
+      <div class="cs-header">
+        <span class="cs-num">3</span>
+        <h2>Forecasting Enablement (Analytics + ML)</h2>
+      </div>
+      <div class="cs-block">
+        <div class="cs-row">
+          <span class="cs-label problem">Problem</span>
+          <p class="cs-text">Limited forward-looking visibility for bookings and inventory planning, relying on manual spreadsheet models.</p>
+        </div>
+        <div class="cs-row">
+          <span class="cs-label approach">Approach</span>
+          <p class="cs-text">Python-based EDA and feature refinement, applied ML techniques (decision trees / regression) to generate forecasting insights, surfaced via Power BI.</p>
+        </div>
+        <div class="cs-row">
+          <span class="cs-label impact">Impact</span>
+          <p class="cs-text">Delivered interactive forecast insights for commercial planning and operational decisioning, replacing static spreadsheet models.</p>
+        </div>
+      </div>
+      <div class="cs-tech">
+        <span class="badge blue">Power BI</span>
+        <span class="badge green">Python</span>
+        <span class="badge green">Jupyter Notebooks</span>
+        <span class="badge purple">Decision Trees</span>
+        <span class="badge purple">Regression Models</span>
+      </div>
     </section>
 
     <footer class="footer">
-      <p>Want the ATS version? <a href="downloads.html">Download here</a>. • Contact: <a href="mailto:yuvaraj85@gmail.com">yuvaraj85@gmail.com</a></p>
+      <p>Want the ATS version? <a href="downloads.html">Download here</a>. &bull; Contact: <a href="mailto:yuvaraj85@gmail.com">yuvaraj85@gmail.com</a></p>
     </footer>
   </main>
 </body>
