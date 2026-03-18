@@ -150,7 +150,9 @@ nav a.active { color: var(--text); font-weight: 500; }
 .edu-list { display: flex; flex-direction: column; gap: 0; }
 .edu-item { display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--rule); align-items: flex-start; }
 .edu-item:last-child { border-bottom: none; }
-.edu-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--bg-alt); border: 1px solid var(--rule); display: grid; place-items: center; font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.edu-icon { width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; margin-top: 2px; }
+.edu-icon.blue { background: linear-gradient(135deg, #0071e3 0%, #34a8ff 100%); box-shadow: 0 4px 14px rgba(0,113,227,.28); }
+.edu-icon.purple { background: linear-gradient(135deg, #5e40b8 0%, #8b5cf6 100%); box-shadow: 0 4px 14px rgba(94,64,184,.28); }
 .edu-body { flex: 1; }
 .edu-degree { font-size: 15px; font-weight: 700; color: var(--text); margin: 0 0 3px; }
 .edu-school { font-size: 14px; color: var(--muted); margin: 0 0 4px; }
